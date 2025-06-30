@@ -1,0 +1,130 @@
+:root {
+  --indigo-600: #4f46e5;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+h2, h4, h5 {
+  font-weight: bold;
+}
+
+span.title {
+  color: var(--indigo-600);
+}
+
+/* Model Cards */
+.model-card {
+  cursor: pointer;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  transition: all 0.2s;
+}
+
+.model-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.model-card.selected {
+  border: 2px solid var(--indigo-600) !important;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+}
+
+/* Metric Cards */
+.metric-card {
+  background-color: rgba(255, 255, 255, 0.02); 
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e0e0e0; /* default text color */
+}
+
+
+
+.metric-card .metric-value {
+  color: #ff6b6b; 
+}
+.metric-card .metric-value-original{
+  font-size: 1.5rem;
+  font-weight: bold;  
+  color: limegreen; 
+}
+
+.metric-card p,
+.metric-card span {
+  color: #b0b0b0; 
+}
+
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.progress {
+  height: 10px;
+  margin-top: 10px;
+}
+
+.confidence-drop {
+  color: #dc3545;
+}
+
+.confidence-gain {
+  color: #28a745;
+}
+
+/* Processing Info */
+#processingInfo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+/* Form Elements */
+.form-control, .form-select {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  border-color: var(--indigo-600);
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--indigo-600);
+  border-color: var(--indigo-600);
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+}
+
+/* Misc */
+.alert-warning {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+hr {
+  border-color: #444;
+}
+
+.form-label {
+  color: #b0b0b0;
+}
